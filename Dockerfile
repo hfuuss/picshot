@@ -4,7 +4,7 @@ USER root
 
 COPY . /app
 
-RUN cd /app && npm install --quiet
+RUN cd /app && npm install
 
 EXPOSE 3000
 

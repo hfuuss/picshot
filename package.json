@@ -7,6 +7,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
     "test": "mocha",
     "precommit": "lint-staged"
   },
@@ -23,16 +24,18 @@
     "lodash": "^4.17.20",
     "pixelmatch": "^5.2.0",
     "pngjs": "^5.0.0",
-    "puppeteer": "^5.5.0",
+    "puppeteer": "^10.2.0",
     "qs": "^6.9.3",
     "yup": "^0.32.8"
   },
   "devDependencies": {
+    "@cloudbase/framework-plugin-container": "^1.8.15",
     "chai": "^4.2.0",
     "fs": "^0.0.1-security",
     "husky": "^4.2.5",
     "lint-staged": "^10.1.3",
     "mocha": "^7.2.0",
+    "nodemon": "^2.0.12",
     "prettier": "^2.0.4"
   }
 }

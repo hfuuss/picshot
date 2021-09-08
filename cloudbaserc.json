@@ -1,24 +1,29 @@
 {
   "envId": "picshot-9ga6llrsb679c5af",
   "framework": {
-    "name": "picshot",
     "plugins": {
       "client": {
         "use": "@cloudbase/framework-plugin-container",
         "inputs": {
+          "mode": "high-availability",
           "serviceName": "picshot",
-          "servicePath": "/picshot",
+          "servicePath": "/",
+          "containerPort": 3000,
           "localPath": "./",
-          "repositoryType": "github",
           "uploadType": "repository",
-          "containerPort": "7001",
+          "repositoryType": "github",
           "codeDetail": {
             "name": "picshot",
             "url": "https://github.com/hfuuss/picshot"
-          }
+          },
+          "ignore": [
+            ".git",
+            "node_modules"
+          ]
         }
       }
-    }
+    },
+    "name": "picshot"
   },
   "functionRoot": "./functions",
   "functions": [],

@@ -72,7 +72,11 @@ The file name is generated from the URL rendered:
 | `https://www.example.com/path/to/resource`    | `resource.pdf`               |
 | `https://www.example.com/path/to/resource.ext`| `resource.pdf`               |
 
-
+## todo
+docker build -t picshot .
+docker images
+<!-- 本地调试 -->
+docker run -it -p 127.0.0.1:3000:3000  picshot
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)

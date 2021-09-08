@@ -16,8 +16,15 @@ let renderer = null
 app.set('query parser', s => qs.parse(s, { allowDots: true }))
 app.disable('x-powered-by')
 
+app.get('/', function(req, res) {
+  res.send('picshot');
+});
+app.get('/lip', function(req, res) {
+  res.send('lippzhang');
+});
+
 // Render url.
-app.use(async (req, res, next) => {
+app.get('/api', async (req, res, next) => {
   let { url, type, filename, ...options } = req.query
 
   if (!url) {
