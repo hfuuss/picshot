@@ -1,0 +1,26 @@
+{
+  "envId": "picshot-9ga6llrsb679c5af",
+  "framework": {
+    "name": "picshot",
+    "plugins": {
+      "client": {
+        "use": "@cloudbase/framework-plugin-container",
+        "inputs": {
+          "serviceName": "picshot",
+          "servicePath": "/picshot",
+          "localPath": "./",
+          "repositoryType": "github",
+          "uploadType": "repository",
+          "containerPort": "7001",
+          "codeDetail": {
+            "name": "picshot",
+            "url": "https://github.com/hfuuss/picshot"
+          }
+        }
+      }
+    }
+  },
+  "functionRoot": "./functions",
+  "functions": [],
+  "region": "ap-shanghai"
+}
